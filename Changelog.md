@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file
 
-[unreleased]: https://github.com/eugenesvk/DUMMY/compare/0.0.0...HEAD
+[unreleased]: https://github.com/eugenesvk/helperes/compare/0.1.0...HEAD
 ## [Unreleased]
 <!-- - __Added__ -->
   <!-- + :sparkles:  -->
@@ -22,10 +22,10 @@ All notable changes to this project will be documented in this file
   <!-- + :lock:  -->
   <!-- vulnerabilities -->
 
+[0.1.0]: https://github.com/eugenesvk/helperes/releases/tag/0.1.0
+## [0.1.0]
+
 - __Added__
   + ✨ type helper functions `type_of` and `print_type_of`
   + ✨ print helper macros/aliases `p` no-panic (propagates errors),  `pp` regular, `pe` error, `pt` type, `pb` during build
   `_mod` proc macro to rewrite path of module imports in a folder to `modname/[modname].rs` (brackets are sorted to the top in a file manager, making the main module more visible)
-
-[0.0.0]: https://github.com/eugenesvk/DUMMY/releases/tag/0.0.0
-## [0.0.0]
