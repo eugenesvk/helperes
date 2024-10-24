@@ -8,7 +8,7 @@ license    	= "MIT"
 build      	= "build.rs"
 
 [workspace]
-members = ["./","helper_proc","xtask"]	# relative to the workspace root
+members = ["./","xtask"]	# relative to the workspace root
 
 [lib]
 name      	= "helperes_lib"
@@ -16,11 +16,11 @@ path      	= "src/helperes.lib.rs"
 crate-type	= ['lib','cdylib']
 
 [dependencies]
-helper_proc	= {path="helper_proc"}
-log        	= "0.4"
-stderrlog  	= "0.5"
-anyhow     	= "1.0"
-faccess    	= "0.2"
+helperes_proc	= {git="https://github.com/eugenesvk/helperes-proc.git", tag="0.1.0"}
+log          	= "0.4"
+stderrlog    	= "0.5"
+anyhow       	= "1.0"
+faccess      	= "0.2"
 
 [build-dependencies]
 log	= "0.4"
