@@ -1,6 +1,6 @@
 [package]  # help on keys doc.rust-lang.org/cargo/reference/manifest.html
 name       	= "helperes"
-version    	= "0.1.0"
+version    	= "0.1.1"
 description	= "Helper functions that can be shared between the main crate as well as the build script"
 authors    	= ["{{authors}}"]
 edition    	= "2021"
