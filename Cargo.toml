@@ -11,7 +11,7 @@ build      	= "build.rs"
 members = ["./","xtask"]	# relative to the workspace root
 
 [lib]
-name      	= "helperes_lib"
+name      	= "helperes"
 path      	= "src/helperes.lib.rs"
 crate-type	= ['lib','cdylib']
 
