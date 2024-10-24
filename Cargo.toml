@@ -1,24 +1,21 @@
 [package]  # help on keys doc.rust-lang.org/cargo/reference/manifest.html
-name   	= "dummy"
-version	= "0.1.0"
-authors	= ["{{authors}}"]
-edition	= "2021"
-build  	= "build.rs"
+name       	= "helperes"
+version    	= "0.1.0"
+description	= "Helper functions that can be shared between the main crate as well as the build script"
+authors    	= ["{{authors}}"]
+edition    	= "2021"
+license    	= "MIT"
+build      	= "build.rs"
 
 [workspace]
-members = ["./","helper","helper_proc","xtask"]	# relative to the workspace root
-
-[[bin]]
-name	= "dummy_bin"
-path	= "src/dummy.bin.rs"
+members = ["./","helper_proc","xtask"]	# relative to the workspace root
 
 [lib]
-name      	= "dummy_lib"
-path      	= "src/dummy.lib.rs"
+name      	= "helperes_lib"
+path      	= "src/helperes.lib.rs"
 crate-type	= ['lib','cdylib']
 
 [dependencies]
-helper     	= {path="helper"}
 helper_proc	= {path="helper_proc"}
 log        	= "0.4"
 stderrlog  	= "0.5"

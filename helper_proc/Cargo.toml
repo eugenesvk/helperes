@@ -9,6 +9,3 @@ license    	= "MIT"
 name      	= "helper_proc"
 path      	= "src/[helper_proc].rs"
 proc-macro	= true
-
-[dependencies]
-helper	= {path="../helper"}
