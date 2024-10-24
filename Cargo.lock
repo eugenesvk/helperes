@@ -96,19 +96,20 @@ dependencies = [
 ]
 
 [[package]]
-name = "helper_proc"
-version = "0.1.0"
-
-[[package]]
 name = "helperes"
 version = "0.1.0"
 dependencies = [
  "anyhow",
  "faccess",
- "helper_proc",
+ "helperes_proc",
  "log",
  "stderrlog",
 ]
+
+[[package]]
+name = "helperes_proc"
+version = "0.1.0"
+source = "git+https://github.com/eugenesvk/helperes-proc.git?tag=0.1.0#73bdc0aa26456a2148be90236309da5f5bf7ec38"
 
 [[package]]
 name = "hermit-abi"
@@ -424,8 +425,8 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "faccess",
- "helper_proc",
  "helperes",
+ "helperes_proc",
  "indoc",
  "log",
  "stderrlog",
