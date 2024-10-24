@@ -6,3 +6,5 @@ pub mod helper;
 
 use crate::alias 	::*;
 use crate::helper	::*;
+
+pub fn lib() -> i32 {0i32}
