@@ -22,6 +22,9 @@ All notable changes to this project will be documented in this file
   <!-- + :lock:  -->
   <!-- vulnerabilities -->
 
+- __Changed__
+  + names of pub imports to avoid conflicts
+
 [0.1.0]: https://github.com/eugenesvk/helperes/releases/tag/0.1.0
 ## [0.1.0]
 
