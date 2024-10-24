@@ -26,7 +26,7 @@ fn main() -> anyhow::Result<()> {
 }
 fn try_main() -> anyhow::Result<()> {
   let task = env::args().nth(1);
-  p!("task_arg1 = {:?} lib = {:?}", task, h::lib());
+  p!("task_arg1 = {:?} lib = {:?}", task, h::lib())?;
   match task {
     None           	=> tasks::print_help(),
     Some(t)        	=> match t.as_str() {
