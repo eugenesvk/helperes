@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file
 
-[unreleased]: https://github.com/eugenesvk/helperes/compare/0.1.1...HEAD
+[unreleased]: https://github.com/eugenesvk/helperes/compare/0.1.2...HEAD
 ## [Unreleased]
 <!-- - __Added__ -->
   <!-- + :sparkles:  -->
@@ -22,6 +22,9 @@ All notable changes to this project will be documented in this file
   <!-- + :lock:  -->
   <!-- vulnerabilities -->
 
+
+[0.1.2]: https://github.com/eugenesvk/helperes/releases/tag/0.1.2
+## [0.1.2]
 - __Added__
   + `pe` to a non-panicking variant of error printer
 
