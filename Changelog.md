@@ -22,6 +22,8 @@ All notable changes to this project will be documented in this file
   <!-- + :lock:  -->
   <!-- vulnerabilities -->
 
+- __Added__
+  + `pe` to a non-panicking variant of error printer
 
 [0.1.1]: https://github.com/eugenesvk/helperes/releases/tag/0.1.1
 ## [0.1.1]
