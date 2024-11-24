@@ -1,6 +1,5 @@
 use crate::helper::*; // pub use reexports for use in other files
 pub use std          	::println      	as pp	; // requires text editor's syntax theme override to retain syntax highlighting
-pub use std          	::eprintln     	as pe	;
 pub use std          	::writeln      	as w 	;
 pub use crate::helper	::print_type_of	as pt	;
 pub use std::any     	::type_name    	     	; // for type_of
@@ -12,3 +11,6 @@ pub use std::io::{self,Write as ioWrite};
 #[macro_export] macro_rules! p  { // println! without panics, propagates error
   ($($tokens:tt)*) => {writeln!(io::stdout(), $($tokens)*)}}
   pub(crate) use p ;
+#[macro_export] macro_rules! pe { //eprintln! without panics, propagates error
+  ($($tokens:tt)*) => {writeln!(io::stderr(), $($tokens)*)}}
+  pub(crate) use pe;
