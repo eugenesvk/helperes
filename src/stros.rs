@@ -1,6 +1,6 @@
 use std::ffi::{OsStr,OsString};
 /// Concatenate 2 OsStr with a single allocation
-pub fn concat_2oss<S:AsRef<OsStr>>(s1:S, s2:S) -> OsString {
+pub fn concat_2oss<S1:AsRef<OsStr>,S2:AsRef<OsStr>>(s1:S1, s2:S2) -> OsString {
   let s1 = s1.as_ref();
   let s2 = s2.as_ref();
   let mut ret = OsString::with_capacity(s1.len() + s2.len()); // allocate once
