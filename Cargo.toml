@@ -15,6 +15,10 @@ name      	= "helperes"
 path      	= "src/helperes.lib.rs"
 crate-type	= ['lib','cdylib']
 
+[features]
+default	= []
+stros  	= []
+
 [dependencies]
 helperes_proc	= {git="https://github.com/eugenesvk/helperes-proc.git", tag="0.1.0"}
 log          	= "0.4"
