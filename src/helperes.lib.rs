@@ -3,8 +3,13 @@
 
 pub mod alias;
 pub mod helper;
+#[cfg(feature="stros")]
+pub mod stros;
 
 use crate::alias 	::*;
 use crate::helper	::*;
+#[cfg(feature="stros")]
+use crate::stros	::*;
+
 
 pub fn lib() -> i32 {0i32}
