@@ -22,3 +22,25 @@ pub fn concat_oss<S:AsRef<OsStr>>(ss:&[S]) -> Result<OsString,Box<dyn std::error
   for s in ss { ret.push(s.as_ref()); } // doesn't allocate
   Ok(ret)
 }
+
+pub fn concat_3oss(s1:S1          ,s2:S2          ,s3:S3                                                                                                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>                                                                                                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()])                                                                                                  	}
+pub fn concat_4oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4                                                                                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>                                                                                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()])                                                                                  	}
+pub fn concat_5oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4          ,s5:S5                                                                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>,S5:AsRef<OsStr>                                                                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()    ,s5.as_ref()])                                                                  	}
+pub fn concat_6oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4          ,s5:S5          ,s6:S6                                                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>,S5:AsRef<OsStr>,S6:AsRef<OsStr>                                                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()    ,s5.as_ref()    ,s6.as_ref()])                                                  	}
+pub fn concat_7oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4          ,s5:S5          ,s6:S6          ,s7:S7                                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>,S5:AsRef<OsStr>,S6:AsRef<OsStr>,S7:AsRef<OsStr>                                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()    ,s5.as_ref()    ,s6.as_ref()    ,s7.as_ref()])                                  	}
+pub fn concat_8oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4          ,s5:S5          ,s6:S6          ,s7:S7          ,s8:S8                          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>,S5:AsRef<OsStr>,S6:AsRef<OsStr>,S7:AsRef<OsStr>,S8:AsRef<OsStr>                	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()    ,s5.as_ref()    ,s6.as_ref()    ,s7.as_ref()    ,s8.as_ref()])                  	}
+pub fn concat_9oss(s1:S1          ,s2:S2          ,s3:S3          ,s4:S4          ,s5:S5          ,s6:S6          ,s7:S7          ,s8:S8          ,s9:S9          	)
+  where            S1:AsRef<OsStr>,S2:AsRef<OsStr>,S3:AsRef<OsStr>,S4:AsRef<OsStr>,S5:AsRef<OsStr>,S6:AsRef<OsStr>,S7:AsRef<OsStr>,S8:AsRef<OsStr>,S9:AsRef<OsStr>	-> Result<OsString> {
+  concat_oss_all(&[s1.as_ref()    ,s2.as_ref()    ,s3.as_ref()    ,s4.as_ref()    ,s5.as_ref()    ,s6.as_ref()    ,s7.as_ref()    ,s8.as_ref()    ,s9.as_ref()])  	}
