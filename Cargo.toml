@@ -22,7 +22,8 @@ stros  	= []
 [dependencies]
 helperes_proc	= {git="https://github.com/eugenesvk/helperes-proc.git", tag="0.1.0"}
 log          	= "0.4"
-stderrlog    	= "0.5"
+# stderrlog  	= "0.6"
+stderrlog    	= {git="https://github.com/eugenesvk/stderrlog-rs"}
 anyhow       	= "1.0"
 faccess      	= "0.2"
 
